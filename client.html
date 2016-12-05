@@ -3,18 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>webSocket</title>
-	<script src="client.js"></script>
+	
 	<script>
 	</script>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
 	<style type="text/css">
-		button{
-			height: 50px;
-			width: 50px;
-		}
 	</style>
 </head>
 
 <body>
-	<button onclick="sendMessage();"></button>
+	<div id="container">
+		<div id="list">
+			<ul id="ul">
+			</ul>
+		</div>
+		<div id="send">
+			<input type="text" id="input">
+			<!-- <button id="button"></button> -->
+		</div>
+	</div>
+
 </body>
+<script src="js/client.js"></script>
 </html>

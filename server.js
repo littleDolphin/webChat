@@ -7,5 +7,6 @@ wss.on('connection', function (ws) {
 	console.log('client connected');
 	ws.on('message', function (message) {
 		console.log(message);
+        ws.send(message+"54435346");
 	});
 });

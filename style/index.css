@@ -1,0 +1,32 @@
+body{
+
+}
+#container{
+	/*margin: 0 auto;*/
+	border: solid 1px #354532;
+	height: 570px;
+	width: 600px;
+	/*background-color: #bbffaa;*/
+}
+#list{
+	height: 90%;
+	border-bottom: solid 1px #111111;
+}
+
+#send{
+	height: 10%;
+}
+#input{
+	width:90%;
+	height: 70%;
+	font-size: 23px;
+}
+
+
+button{
+	height: 50px;
+	width: 50px;
+	/*margin: 0 auto;*/
+	float: right;
+	/*background-color: #bbffaa;*/
+}
