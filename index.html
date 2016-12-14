@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>webSocket</title>
+	
+	<script>
+	</script>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<style type="text/css">
+		#container{
+			height: 600px;
+			width: 450px;
+		}
+		#message_list{
+			height: 450px;
+			width: 450px;
+			border: solid 1px #999999;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="message_list">
+			<ul id="message_ul">
+				
+			</ul>
+		</div>
+		<div>
+			<input type="text" id="input">
+			<button id="button">dsf</button>
+		</div>
+	</div>
+
+</body>
+<!-- <script src="js/client.js"></script> -->
+<script src="/socket.io/socket.io.js"></script>
+<script>
+	var socket = io();
+	var button=document.getElementById('button');
+	var input=document.getElementById('input');
+	var message_ul=document.getElementById('message_ul');
+
+
+	button.onclick=function(){
+		socket.emit('chat',input.value);
+	};
+
+	socket.on('send',function(message){
+		appendMessage(message);
+	});
+
+	function appendMessage(message){
+		var appenLi = document.createElement("li");
+		appenLi.innerHTML = message;
+		message_ul.appendChild(appenLi);
+	}
+</script>
+</html>

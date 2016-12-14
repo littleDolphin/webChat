@@ -21,12 +21,11 @@ io.on('connection', function(socket){
 
 	socket.on('chat', function(msg){
 		console.log('chat: ' + msg);
-		// 
-		io.emit('send', msg);
+		// socket.emit('get','the message is'+msg);
+		io.emit('get', msg);
 	});
 	socket.on('send', function(msg){
 		console.log('new message ############: ' + msg);
-		socket.emit('send','the message is'+msg);
 	});
 	socket.on('get', function(msg){
 		console.log('new message ############: ' + msg);
