@@ -1,0 +1,41 @@
+
+#login_div{
+	display: none;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+
+}
+#login{
+	
+}
+
+#container{
+	/*display: none;*/
+	height: 560px;
+	width: 650px;
+	margin: 0 auto;
+}
+#message_list{
+	height: 550px;
+	width: 650px;
+	border: solid 1px #999999;
+	overflow: auto;
+}
+#message_ul{
+	list-style: none;
+	padding: 0;
+}
+#message_ul > li{
+	line-height: 30px;
+	text-align: left;
+}
+#message_input{
+	text-align: left;
+}
+#input{
+	width: 87%;
+}
+#button{
+	/*width: 10%;*/
+}
