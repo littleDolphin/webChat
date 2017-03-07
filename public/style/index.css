@@ -1,20 +1,47 @@
-
-#login_div{
-	display: none;
-	margin: 0 auto;
-	height: 100%;
+html,body{
+	/*浏览器默认情况下，body标签是没有height属性的，所以需要给html+body设置height:100%属性*/
+	margin: 0;
+	padding: 0;
 	width: 100%;
+	height: 100%;
+	/*background-color: #bbffaa;*/
+}
+#select_div{
+	float: left;
+	width: 30%;
+	/*background-color: red;*/
+}
+#select_div > ul  {
+	list-style-type: none;
+	margin: 0;
+	padding:0 ;
+	background-color: #343243;
+	/*list-style-image: url('pictures/logo/6.png');*/
+}
+#select_div > ul > li{
+	height: 30px;
+	margin:  5px 0;
+
+	background-color: #bbffaa;
+}
+#message_div{
+	float: right;
+	width: 70%;
 
 }
+
+
+
 #login{
-	
+	/*margin: 0 auto;*/
 }
 
 #container{
 	/*display: none;*/
 	height: 560px;
-	width: 650px;
+	width: 950px;
 	margin: 0 auto;
+	background-color: #6f7c6b;
 }
 #message_list{
 	height: 550px;
@@ -22,12 +49,15 @@
 	border: solid 1px #999999;
 	overflow: auto;
 }
-#message_ul{
+.message_ul{
 	list-style: none;
 	padding: 0;
+	margin: 0;
 }
-#message_ul > li{
-	line-height: 30px;
+.message_ul > li{
+	padding: 0;
+	margin: 0;
+	height: 50px;
 	text-align: left;
 }
 #message_input{
@@ -38,4 +68,48 @@
 }
 #button{
 	/*width: 10%;*/
+}
+
+
+
+
+.user_logo{
+	line-height: 50px;
+	font-size: 21px;
+	border: solid 1px #000000;
+	padding:5px;
+	margin-right: 10px;
+}
+
+
+.send {
+	position:relative;
+	padding: 5px;
+	font-size: 21px;
+	line-height: 50px;
+	background:#F8C301;
+	border-radius:5px; /* 圆角 */
+
+}
+
+.send .leftArrow {
+	position:absolute;
+	top:5px;
+	left:-16px; /* 圆角的位置需要细心调试哦 */
+	width:0;
+	height:0;
+	font-size:0;
+	border:solid 8px;
+	border-color:transparent #F8C301 transparent transparent;
+}
+
+.send .rightArrow {
+	position:absolute;
+	top:5px;
+	right:-16px; /* 圆角的位置需要细心调试哦 */
+	width:0;
+	height:0;
+	font-size:0;
+	border:solid 8px;
+	border-color:transparent #F8C301 transparent transparent;
 }
